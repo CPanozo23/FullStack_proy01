@@ -189,7 +189,7 @@ header button{
 }
 
     @media (min-width:1301px) {
-        .cardV, .cardH, .contenedor_footer{
+        .cardV, .cardH, .footer .container{
             width: 1300px;
             margin:0 auto;
         }   
@@ -299,3 +299,95 @@ header button{
             margin-bottom: -5px;
         }
     }
+/**************** [6] FOOTER ****************/  
+footer{
+    background-color: orange;
+    padding:20px;
+    align-items: center;      
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+    
+}
+footer .container ul{
+    list-style-type: none;   
+}
+
+footer .container ul li{ margin-top: 1em;}
+footer .container a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;  
+}
+
+footer .container a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer .container input{
+    width: 80%;
+    padding: 1em;
+    margin:0.5em;
+    border-radius: 10px;  
+    border:1px orangered solid; 
+}
+footer .container .rrss div{
+    margin-top: 1em;
+}
+
+footer .container .rrss img{
+    width: 25px;
+    scale: 0.9;
+    transition: 0.5s;
+    vertical-align: bottom;
+    padding-left: 1em;
+}
+
+footer .container .rrss img:hover{
+    scale: 1;
+}
+
+footer form button{  
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin-left: 1em;   
+    transition: 0.5s; 
+    font-weight: bold;
+    scale:0.9
+    
+}
+
+footer form button:hover{  
+   
+    border-radius: 10px; 
+    background-color: orangered; 
+    scale: 1;
+    color:white;
+}
+
+@media (max-width:895px)  {
+    footer .container{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+   
+}
+
+@media (max-width:640px)  {
+    footer .container{
+        display: block;
+        
+    }
+    footer .container section{margin-bottom: 1em;}
+    
+}
+
+.copyright{
+    border-top: 2px solid orangered;
+    text-align: center;
+    margin-top: 1em;
+    padding-top:1em
+}

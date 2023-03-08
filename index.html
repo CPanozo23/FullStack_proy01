@@ -12,11 +12,11 @@
 </head>
 <body>
     <header>
-        <h1>Panozo</h1>
+        <h1>TyM Panozo</h1>
         
         <nav>
-            <a href="#">Servicios</a>
-            <a href="#">Blog</a>
+            <a href="#services">Servicios</a>
+            <a href="#blog">Blog</a>
             <a href="#">¿Quienes Somos?</a>
             <a href="#">Contacto</a>
             <a href="#">Iniciar Sesión</a>
@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <h2>Conoce nuestros servicios</h2>
         <div class="cardV">
             <article class="products">
@@ -78,7 +78,7 @@
 
             <article class="products">
                 <section class="infoImg">
-                    <img src="./assets/images/pexels-tranmautritam-251225.jpg" >
+                    <img src="./assets/images/pexels-tranmautritam-251225.jpg" alt="" >
                 </section>
                 <section class="infoText">
                     <div>
@@ -93,11 +93,7 @@
         </div>
     </section>
 
-
-
-
-
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2>Blog</h2>
         <div class="cardH">
             <article class="news">
@@ -113,10 +109,7 @@
                     <div class="newsBtn">
                         <a class="linkBtn" href="#">Leer</a>
                     </div>                  
-                    
-
-                </section>
-                
+                </section>               
             </article>
             
             <article class="news">
@@ -125,15 +118,13 @@
                 </section>
                 <section class="infoText">
                     <div>
-
                         <h3>Cuidados para tu equipo</h3>
                         <p>Ya que el computador es una herramienta tan necesaria en la actualizad, aprende a cuidarlo utilizando herramientas básicas.</p>
                     </div>
                     <div class="newsBtn">
                         <a class="linkBtn" href="#">Leer</a>
                     </div>
-                </section>
-                
+                </section>                
             </article>
 
             <article class="news">
@@ -148,8 +139,7 @@
                     <div class="newsBtn">
                         <a class="linkBtn" href="#">Leer</a>
                     </div>
-                </section>
-                
+                </section>               
             </article>
 
             <article class="news">
@@ -181,7 +171,46 @@
         </div>
     </section>
     
+    <footer class="footer">
+        <div class="container">
+            <section>
+                <h1>TyM Panozo</h1>
+                <p>Tecnología y Marketing a tus manos</p>
+            </section>
+            <section>
+                <h4>Navega por nuestro sitio web</h4>
+                <ul>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">¿Quienes Somos?</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>¿Quieres que nos contactémos?</h4>
+                <p>¡Deja tus datos!</p>
+                <form id="frmContactUs">
+                    <input type="text" id="txtName" name="txtName" placeholder="Ingresa tu nombre"> <br>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Ingresa tu email">
+                    <button>Enviar</button>
+                </form>
+            </section>
+            <section class="rrss">
+                <h4>Encuentranos en nuestras redes sociales</h4>
+                <div>
+                    <a href="#"><img src="assets/images/icons/facebook.png" alt="Facebook">TyM Panozo</a></div>
+                <div>
+                    <a href="#"><img src="assets/images/icons/twitter.png" alt="Twitter">TyM Panozo</a>
+                </div>
 
+                <div><a href="#"><img src="assets/images/icons/instagram (1).png" alt="Instagram">TyM Panozo</a>
+                </div>
+            </section>
+        </div>
+        <p class="copyright">Sitio Web creado por <strong>&copy; TyM Panozo</strong> 2023 | hola@tympanozo.cl</p>
+
+    </footer>
     
     
 </body>
