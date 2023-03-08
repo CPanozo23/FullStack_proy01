@@ -90,7 +90,7 @@ header button{
     scale: 1;
 }
 
-.infoImg img{width: 50vw; }
+.infoImg img{width: 50vw; margin-bottom: -4px; }
 
 .linkBtn{  
     padding: 0.5em;
@@ -117,16 +117,16 @@ header button{
 
 @media (max-width:1150px) and (min-width:896px) {
     .jumbotron .container .infoTxt, .talk .container .infoTxt{flex:2;}
-    .jumbotron .container .infoImg, .talk .container .infoImg{flex:1;}
-    .infoImg img{max-width: 50vw;}
-    .infoImg {
+    .jumbotron .container .infoImg, .talk .container .infoImg{
+        flex:1;
         width: 50%;
         height: auto;
         overflow: hidden;
         margin: 0px;
         position: relative;
     }
-    .infoImg img {
+    .jumbotron .container .infoImg img, .talk .container .infoImg img{
+        max-width: 50vw;
         position:absolute;
         left: -100%;
         right: -100%;
@@ -142,6 +142,84 @@ header button{
     .jumbotron .container, .talk .container{
         display: block;
     }
-    .infoImg img{width: 100vw; }
+    .jumbotron .container .infoImg img, .talk .container .infoImg img{width: 100vw; }
 }
 
+/**************** [4] SERVICES ****************/
+.services, .blog {
+    margin:30px 0;
+}
+.cardV{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;    
+}
+.services h2, .blog h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color:orangered;
+    text-align: center;
+    font-size: 36pt;
+    margin-bottom: 20px;
+}
+.products{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap:0px;   
+        
+}
+.products .infoImg img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom: -5px;
+}
+
+.products .infoText div:first-child{
+    padding: 10px 20px;   
+    min-height: 170px;
+}
+
+.products .productsBtn{
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+    @media (min-width:1301px) {
+        .cardV, .cardH, .contenedor_footer{
+            width: 1300px;
+            margin:0 auto;
+        }   
+    }
+
+    @media (max-width:895px) {
+        .cardV{
+            display: block;  
+        }
+        .products{
+            margin: 1em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:0px;   
+        }       
+        .products .infoImg img{
+            height: 100%;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }       
+    }
+
+    @media (max-width:640px) {
+        .products{
+            display: block;
+        }
+
+        .products .infoImg img{
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 0px;
+        } 
+    }
