@@ -146,7 +146,7 @@ header button{
 }
 
 /**************** [4] SERVICES ****************/
-.services, .blog {
+.services{
     margin:30px 0;
 }
 .cardV{
@@ -154,7 +154,7 @@ header button{
     grid-template-columns: repeat(3, 1fr);
     gap:20px;    
 }
-.services h2, .blog h2{
+.services h2{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color:orangered;
     text-align: center;
@@ -222,4 +222,80 @@ header button{
             border-top-right-radius: 5px;
             border-bottom-left-radius: 0px;
         } 
+    }
+
+/**************** [5] BLOG ****************/  
+.blog {
+    background-color: orange;
+    padding-bottom: 30px; 
+    margin-bottom:0 30px 0 0;
+}
+
+.blog h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color:black;
+    text-align: center;
+    font-size: 36pt;
+    margin-bottom: 20px;
+}    
+.cardH, .news{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;    
+    }
+    
+    
+    .news{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+        padding: 0;
+    }
+
+    .news img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-bottom: -5px;
+    }
+    .news .infoText{
+        padding: 10px 20px;
+    }
+    
+    .infoText{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap:5px;    
+    }
+    
+    @media (max-width:1150px)  {
+        .cardH{
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            gap:20px;
+            max-width: 880px; 
+            margin: auto;  
+        }
+        .news img{height: 100%;}
+    }
+
+    @media (max-width:895px)  {
+        .cardH{
+            max-width: auto; 
+            margin: 1em;  
+        }
+    }
+
+    @media (max-width:640px) {
+        .news{
+            display: block;
+        }
+
+        .news img{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 0px;
+            margin-bottom: -5px;
+        }
     }
