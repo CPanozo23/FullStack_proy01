@@ -133,12 +133,14 @@ header nav ul li a.active, header nav ul li a:hover{
     transition: 0.5s; 
     font-weight: bold;
     scale:0.9;
-    cursor: pointer;  
+    cursor: pointer; 
+    background-color: orange; 
 }
 
 .jumbotron .container form button:hover{     
     border-radius: 10px; 
-    background-color: orange; 
+    background-color: orangered; 
+    color:white;
     scale: 1;
     
 }
@@ -196,6 +198,25 @@ header nav ul li a.active, header nav ul li a:hover{
         display: block;
     }
     .jumbotron .container .infoImg img, .talk .container .infoImg img{width: 100vw; }
+}
+@media (max-width:700px) {
+
+    .jumbotron .container form{
+        display: block;
+        width: auto;
+    }
+    
+    .jumbotron .container form input{width: auto;}
+
+    .jumbotron .container .infoTxt h2, .talk .container .infoTxt h2{
+        font-size: 30pt;
+    }
+
+    .jumbotron .container form button{  
+        padding: 1em 2em;  
+    }
+    
+
 }
 
 /**************** [4] SERVICES ****************/
