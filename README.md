@@ -66,4 +66,4 @@ Other tools such as bootstrap are not used, in this way everything related to re
 
 ## 4. Website
 
-The built website is hosted on netlify: https://proy01cpanozo.netlify.app/ (https://proy01cpanozo.netlify.app/)
+The built website is hosted on netlify: [https://proy01cpanozo.netlify.app/](https://proy01cpanozo.netlify.app/)
