@@ -4,6 +4,7 @@
 * [2. Characteristics](#2-Characteristics)
 * [3. Sections](#3-Sections)
 * [4. Wireframe](#4-Wireframe)
+* [5. Website](#5-Website)
 
 
 ## 1. Introduction
@@ -62,3 +63,7 @@ Other tools such as bootstrap are not used, in this way everything related to re
 ### 4.1 View responsive screen
 
 <img src="./assets/images/wireframe/index_responsive.png">
+
+## 4. Website
+
+The built website is hosted on netlify: https://proy01cpanozo.netlify.app/(https://proy01cpanozo.netlify.app/)

@@ -62,7 +62,6 @@ header nav ul li a.active, header nav ul li a:hover{
     header nav ul li a{ padding: 1em;}
 }
 @media (max-width: 858px){
-    
     .checkbtn{display: block;}
     header nav ul{
         position: fixed;
@@ -72,8 +71,17 @@ header nav ul li a.active, header nav ul li a:hover{
         top: 70px;
         left: -100%;
         text-align: center;
-
     }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 0px;
+    }
+    .jumbotron{
+        margin-top:70px;
+    }
+
     header nav ul li{
         display: block;
         margin:0;     
@@ -197,7 +205,7 @@ header nav ul li a.active, header nav ul li a:hover{
     .jumbotron .container, .talk .container{
         display: block;
     }
-    .jumbotron .container .infoImg img, .talk .container .infoImg img{width: 100vw; }
+    .jumbotron .container .infoImg img, .talk .container .infoImg img{width: 100%;}
 }
 @media (max-width:700px) {
 
@@ -206,7 +214,10 @@ header nav ul li a.active, header nav ul li a:hover{
         width: auto;
     }
     
-    .jumbotron .container form input{width: auto;}
+    .jumbotron .container form button, .jumbotron .container form input{
+        width: auto;
+        display: block;
+    }
 
     .jumbotron .container .infoTxt h2, .talk .container .infoTxt h2{
         font-size: 30pt;
