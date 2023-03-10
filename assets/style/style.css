@@ -4,7 +4,34 @@
     margin:0;
     font-family: 'Montserrat', sans-serif;
 }
+h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    font-size: 36pt;
+}
 
+form input{
+    padding: 1em;
+    margin:0.5em;
+    border-radius: 10px;  
+    border:1px orange solid; 
+}
+
+form button{  
+    border-radius: 10px;
+    margin-left: 1em;   
+    transition: 0.5s; 
+    font-weight: bold;
+    scale:0.9;
+    cursor: pointer; 
+    background-color: orange; 
+    }
+
+form button:hover{     
+    background-color: orangered; 
+    color:white;
+    scale: 1; 
+}
 /**************** [2] HEADER - NAV ****************/
 header{
     background-color: orange;
@@ -40,7 +67,7 @@ header nav a{text-decoration: none;}
 header nav ul li a{
     color: black;
     font-size: 18px;
-    padding: 2em;    
+    padding: 1.4em 2em;    
 }
 header nav ul li a.active, header nav ul li a:hover{
     background:orangered;
@@ -59,7 +86,8 @@ header nav ul li a.active, header nav ul li a:hover{
 
 @media (max-width:1150px) {
     header{padding: 0px;}
-    header nav ul li a{ padding: 1em;}
+    header nav ul li a{ padding: 1.4em 1em;}
+    
 }
 @media (max-width: 858px){
     .checkbtn{display: block;}
@@ -78,7 +106,7 @@ header nav ul li a.active, header nav ul li a:hover{
         z-index: 100;
         top: 0px;
     }
-    .jumbotron{
+    .jumbotron, .login{
         margin-top:70px;
     }
 
@@ -113,10 +141,7 @@ header nav ul li a.active, header nav ul li a:hover{
     font-size: 14pt;
 }
 .jumbotron .container .infoTxt h2, .talk .container .infoTxt h2{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     color:orange;
-    text-align: center;
-    font-size: 36pt;
 }
 .jumbotron .container .infoTxt p, .talk .container .infoTxt p{margin-bottom: 10px;}
 
@@ -126,32 +151,15 @@ header nav ul li a.active, header nav ul li a:hover{
 .jumbotron .container form div:first-child, .talk .container form div:first-child{flex:2;}
 .jumbotron .container form input, .talk .container form input{
     width: 100%;
-    padding: 1em;
-    margin:0.5em;
-    border-radius: 10px;  
-    border:1px orange solid; 
 }
 
 .jumbotron .container form div:last-child, .talk .container form div:last-child{flex:1;}
 
 .jumbotron .container form button{  
-    padding: 0em 2em;
-    border-radius: 10px;
-    margin-left: 1em;   
-    transition: 0.5s; 
-    font-weight: bold;
-    scale:0.9;
-    cursor: pointer; 
-    background-color: orange; 
+    padding: 0em 2em;   
+    margin-left: 1em;
 }
 
-.jumbotron .container form button:hover{     
-    border-radius: 10px; 
-    background-color: orangered; 
-    color:white;
-    scale: 1;
-    
-}
 
 .infoImg img{width: 50vw; margin-bottom: -4px; }
 
@@ -274,7 +282,7 @@ header nav ul li a.active, header nav ul li a:hover{
 }
 
     @media (min-width:1301px) {
-        .cardV, .cardH, .footer .container{
+        .cardV, .cardH, .footer .container, .login{
             width: 1300px;
             margin:0 auto;
         }   
@@ -415,11 +423,9 @@ footer .container a:hover{
 
 footer .container input{
     width: 80%;
-    padding: 1em;
-    margin:0.5em;
-    border-radius: 10px;  
     border:1px orangered solid; 
 }
+
 footer .container .rrss div{
     margin-top: 1em;
 }
@@ -438,21 +444,9 @@ footer .container .rrss img:hover{
 
 footer form button{  
     padding: 1em 2em;
-    border-radius: 10px;
-    margin-left: 1em;   
-    transition: 0.5s; 
-    font-weight: bold;
-    scale:0.9;
-    cursor: pointer;
+    background: rgb(255, 136, 0);
 }
 
-footer form button:hover{  
-   
-    border-radius: 10px; 
-    background-color: orangered; 
-    scale: 1;
-    color:white;
-}
 
 @media (max-width:895px)  {
     footer .container{
@@ -463,8 +457,7 @@ footer form button:hover{
 
 @media (max-width:640px)  {
     footer .container{
-        display: block;
-        
+        display: block;       
     }
     footer .container section{margin-bottom: 1em;}
     
@@ -475,4 +468,42 @@ footer form button:hover{
     text-align: center;
     margin-top: 1em;
     padding-top:1em
+}
+
+/**************** [7] LOGIN ****************/ 
+.login{
+    background: white;
+    padding-bottom: 2em;
+}
+.login h2{color:orangered}
+.login form button{  
+    padding: 1em 2em;   
+    margin-left: 1em;
+}
+
+.login form div{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:0px;
+    margin-bottom: 1em;    
+}
+.login form div input{
+    width: 300px;
+}
+.login form div label{
+    width: 100px;
+    margin-left: 1em;
+}
+@media (max-width:640px)  {
+    .login form div {
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        gap:0px;
+        margin: 0.5em 0;
+    }
+    .login form div input{
+        width: auto;
+    }
 }
